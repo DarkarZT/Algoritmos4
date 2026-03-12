@@ -1,7 +1,7 @@
 import re
 
 def validar_correo(correo: str) -> bool:
-    patron = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
+    patron = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(\.[a-zA-Z]{2,})?$'
     return bool(re.match(patron, correo))
 
 # Pruebas
